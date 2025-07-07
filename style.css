@@ -1,0 +1,100 @@
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #004080;
+  color: white;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  padding: 2em;
+  background-color: #e0f7fa;
+  text-align: center;
+}
+
+/* Services */
+.services {
+  display: flex;
+  justify-content: space-around;
+  padding: 2em;
+  flex-wrap: wrap;
+}
+
+.service {
+  background-color: white;
+  padding: 1em;
+  margin: 1em;
+  flex: 1 1 30%;
+  text-align: center;
+  border: 1px solid #ccc;
+  transition: transform 0.3s;
+}
+
+.service:hover {
+  transform: scale(1.05);
+}
+
+/* CTA Update */
+.cta-update {
+  text-align: center;
+  padding: 2em;
+}
+
+input {
+  padding: 0.5em;
+  width: 60%;
+  max-width: 300px;
+}
+
+button {
+  padding: 0.5em 1em;
+  margin-left: 1em;
+}
+
+/* Footer */
+footer {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+}
